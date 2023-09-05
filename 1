@@ -1,1 +1,14 @@
+public class MultiplicationTable {
+    public static void makeMultTable(int M) {
+        System.out.println("X  M");
+        for (int i = 1; i <= 12; i++) {
+            int result = i * M;
+            System.out.println(i + "  " + result);
+        }
+    }
 
+    public static void main(String[] args) {
+        int M = 5; // You can change this value to generate a table for a different number.
+        makeMultTable(M);
+    }
+}
