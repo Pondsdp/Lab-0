@@ -1,0 +1,20 @@
+public class DeductSequence {
+    public static void deductK(int M, int k) {
+        if (M <= 0 || k <= 0) {
+            System.out.println("M and k must be positive integers.");
+            return;
+        }
+
+        int current = M;
+        while (current >= 0) {
+            System.out.println(current);
+            current -= k;
+        }
+    }
+
+    public static void main(String[] args) {
+        int M = 20; // Starting number
+        int k = 3;  // Deduction value
+        deductK(M, k);
+    }
+}
